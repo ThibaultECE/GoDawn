@@ -1,0 +1,12 @@
+<h1>{{.Titre}}</h1>
+<ul>
+    {{range .Projets}}
+        {{if .Done}}
+            <li class="done">{{.Title}}</li>
+            <span>This Project is done</span>
+        {{else}}
+            <li>{{.Title}}</li>
+            <span>This Project is yet to be finished</span>
+        {{end}}
+    {{end}}
+</ul>
